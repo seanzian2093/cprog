@@ -1,0 +1,9 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/seanz/cprog-inlinux/ch4'
+gcc -c decode_value.c
+ar rcs c_in_linux.a decode_value.o
+rm -f *.O
+gcc -o logic-4 ch4_3.c c_in_linux.a -lc
+cp logic-4 /usr/lib/cgi-bin/
+make: Leaving directory '/home/seanz/cprog-inlinux/ch4'
+ 
